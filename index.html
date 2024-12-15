@@ -21,20 +21,20 @@
 
         <div class="calculator">
           <label for="input">Bill</label>
-          <input class="input-style" placeholder="0" type="text">
+          <input id="cost" class="input-style" placeholder="0" type="text">
           <div class="button-grid">
             <label>Select Tip %</label>
             <div class="grid">
-              <button>5%</button>
-              <button>10%</button>
-              <button>15%</button>
-              <button>25%</button>
-              <button>50%</button>
-              <button class="custom">Custom</button>
+              <button value="5">5%</button>
+              <button value="10">10%</button>
+              <button value="15">15%</button>
+              <button value="25">25%</button>
+              <button value="50">50%</button>
+              <input placeholder="Custom"></input>
             </div>
           </div>
           <label for="input">Number of People</label>
-          <input class="input-style alt" placeholder="0" type="text">
+          <input id='person' class="input-style alt" placeholder="0" type="text">
         </div>
 
         <!-- display -->
@@ -59,6 +59,6 @@
       </div>
     </div>
   </main>
-  <script src="scripts.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

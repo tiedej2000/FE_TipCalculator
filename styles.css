@@ -67,9 +67,31 @@ body{
     color: white;
     border: none;
     border-radius: 5px;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 550;
     cursor: pointer;
+    height: 40px;
+}
+
+.button-grid button:hover{
+    background-color: #9EE8DD;
+    color: #054C4C;
+}
+
+.grid input{
+    height: 40px;
+    width: 100px;
+    text-align: right;
+    padding: 10px;
+    font-size: 1.3rem;
+    color: hsl(183, 97%, 15%);
+    font-weight: 550;
+    cursor: pointer;
+    outline: none;
+}
+
+.grid input:focus{
+    border: 2px solid #9EE8DD;
 }
 
 .button-grid .custom  {
@@ -146,4 +168,9 @@ body{
     font-weight: 600;
     font-size: 1rem;
     cursor: pointer;
+}
+
+.display button:hover{
+    background-color: #9EE8DD;
+    color: #054C4C;
 }
