@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
   <title>Frontend Mentor | Tip calculator app</title>
@@ -19,16 +21,40 @@
 
         <div class="calculator">
           <label for="input">Bill</label>
-          <input type="text">
-          <div class="button-grid"></div>
+          <input class="input-style" placeholder="0" type="text">
+          <div class="button-grid">
+            <label>Select Tip %</label>
+            <div class="grid">
+              <button>5%</button>
+              <button>10%</button>
+              <button>15%</button>
+              <button>25%</button>
+              <button>50%</button>
+              <button class="custom">Custom</button>
+            </div>
+          </div>
+          <label for="input">Number of People</label>
+          <input class="input-style alt" placeholder="0" type="text">
         </div>
 
         <!-- display -->
 
         <div class="display">
-          <div class="tip-amt"></div>
-          <div class="total-amt"></div>
-          <button>Reset</button>
+          <div class="tip-amt">
+            <div class="text-section">
+              <p>Tip Amount</p>
+              <p>/ person</p>
+            </div>
+            <div class="tip-amt-person price">$0.00</div>
+          </div>
+          <div class="total-amt">
+            <div class="text-section">
+              <p>Total</p>
+              <p>/ person</p>
+            </div>
+            <div class="tip-amt-total price">$0.00</div>
+          </div>
+          <button>RESET</button>
         </div>
       </div>
     </div>

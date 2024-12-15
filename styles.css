@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    line-height: 1;
+    font-family: "Space Mono", monospace;
+}
+
+body{
+    background-color: hsl(185, 41%, 84%);
+}
+
+.main-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card{
+    display: flex;
+    background-color: white;
+    width: 700px;
+    height: 350px;
+    border-radius: 20px;
+    padding: 4vh;
+    gap: 30px;
+    color: hsl(186, 14%, 43%);
+}
+
+.calculator{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.calculator input{
+    background-color: hsl(202, 50%, 97%);
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+}
+
+.calculator label{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 10px;
+    height: 90px;
+}
+
+.button-grid{
+    margin: 20px 0 ;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.button-grid button{
+    background-color:hsl(183, 97%, 15%) ;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: 550;
+    cursor: pointer;
+}
+
+.button-grid .custom  {
+    color: hsl(186, 14%, 43%);
+    background-color: hsl(206, 47%, 97%);
+}
+
+.input-style{
+    width: 100%;
+    background: url(./images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-size: 10px;
+    text-align: right;
+    outline: none;
+    background-position: 5% 50%;
+    padding: 0 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: hsl(186, 14%, 43%);
+}
+
+.alt{
+    background: url(./images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position: 5% 50%;
+}
+
+.display{
+    height: 100%;
+    width: 50%;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 15px;
+    padding: 30px 25px;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.total-amt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tip-amt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price{
+    color: hsl(171, 67%, 45%);
+    font-size: 2.5rem;
+}
+
+
+.text-section > p:nth-of-type(2) {
+    color: hsl(186, 14%, 43%);
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+
+.display button{
+    margin-top: auto;
+    height: 40px;
+    background-color: #0c686d;
+    border-style: none;
+    border-radius: 5px;
+    color: hsl(183, 100%, 15%);
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+}
