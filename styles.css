@@ -174,3 +174,46 @@ body{
     background-color: #9EE8DD;
     color: #054C4C;
 }
+
+.labels{
+    display: flex;
+    justify-content: space-between;
+}
+
+#error-msg{
+    color: hsl(8, 62%, 65%);
+    visibility: hidden;
+}
+
+#person.person-error{
+    border: 2px solid hsl(8, 62%, 65%);
+}
+
+@media(max-width:600px){
+    *{
+        box-sizing: border-box;
+    }
+
+    .main-wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .card{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 15vh;
+    }
+
+    .calculator{
+        width: 100%;
+    }
+
+    .display{
+        width: 100%;
+    }
+}

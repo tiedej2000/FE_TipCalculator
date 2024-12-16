@@ -1,4 +1,7 @@
 const buttons = document.querySelectorAll('button')
+const inputButton = document.querySelector('.grid input')
+const errorMsg = document.getElementById('error-msg')
+const personInput = document.getElementById('person')
 
 const getValues = () =>{
     buttons.forEach((button) =>{
@@ -7,10 +10,30 @@ const getValues = () =>{
             const personAmount = document.getElementById('person').value
             const tipPercentage = button.value
            
-            calculateTips(cost,personAmount,tipPercentage)
+            if(personAmount >= 1 && Number.isInteger(Number(personAmount))){
+                calculateTips(cost,personAmount,tipPercentage)
+                errorMsg.style.visibility = 'hidden'
+                personInput.classList.remove('person-error')
+            } else{
+                errorMsg.style.visibility = 'visible'
+                personInput.classList.add('person-error')
+            }
+            
         })
     })
 }
+
+inputButton.addEventListener('input', ()=>{
+    const cost = document.getElementById('cost').value
+    const personAmount = document.getElementById('person').value
+    const tipPercentage = inputButton.value
+           
+    if(personAmount >= 1 && Number.isInteger(Number(personAmount))){
+        calculateTips(cost,personAmount,tipPercentage)
+    } else{
+        console.log("not a valid input")
+    }
+})
 
 const calculateTips = (bill,numPerson,tipPerc) => {
     bill = parseFloat(bill)
