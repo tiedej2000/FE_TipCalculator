@@ -43,7 +43,7 @@ const calculateTips = (bill,numPerson,tipPerc) => {
     resultTipPerson = bill * (tipPerc / 100) / numPerson
     
     resultTip = bill * (tipPerc / 100)
-    resultTotal  = resultTip + bill
+    resultTotal  = (resultTip/numPerson) + (bill/numPerson) 
 
     displayValue(resultTipPerson,resultTotal)
 }
